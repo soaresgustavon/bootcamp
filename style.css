@@ -9,7 +9,7 @@
                 --fonte-padrao: 'Inter';
             }
 
-            /*Barra de navegação superior*/
+            /*BARRA DE NEVAGAÇÃO SUPERIOR*/
 
             body{
                 margin: 0;
@@ -64,7 +64,7 @@
 
             }
 
-            /*Seção principal*/
+            /*SEÇÃO PRINCIPAL*/
 
             section{
                 display: flex;
@@ -100,7 +100,7 @@
                 padding: 1px;
             }
 
-            /*Formulário*/
+            /*FORMULÁRIO*/
 
             form{
                 color: white;
@@ -151,6 +151,7 @@
 
             input[type="submit"]{
                 background-color: rgba(12, 112, 242, 0.90);
+                padding: 3px;
                 width: 100%;
                 height: 56px;
                 color: #FFF;
@@ -158,4 +159,148 @@
                 margin-top: 100px;
                 box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
                 cursor: pointer;
+            }
+
+            /*FOOTER*/
+
+            footer{
+                width: 100%;
+                background-color: var(--azul-dnc);
+            }
+
+            footer .linha1{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            footer ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            footer nav{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                height: 330px;
+
+            }          
+
+            footer h5{
+                text-align: center;
+                color: white;
+                font-weight: 800;
+                font-size: 18px;
+                font-family: var(--fonte-padrao);
+                background-color: var(--preto-dnc);
+                border-radius: 10px;
+                padding: 10px 10px 10px 10px;
+                margin-bottom: 1px;
+            }
+
+            footer li{
+                text-align: center;
+                color: white;
+                font-weight: 600;
+                font-size: 18px;
+                font-family: var(--fonte-padrao);
+                margin: 20px 0px 20px 0px;
+            }
+
+            footer ul li a{
+                color: white;
+                text-decoration: none;
+            }
+
+            footer ul li a:hover{
+                color: var(--cinza-hover);
+            }
+
+            footer .endereco{
+                font-weight: 600;
+                font-size: 18px;
+                font-family: var(--fonte-padrao);
+                color: white;
+                text-align: center;
+                width: 25%;
+            }
+
+            footer .linha2{
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                padding: 10px;
+            }
+
+            footer .linha2 a{
+                font-family: var(--fonte-padrao);
+                font-size: 18px;
+                font-weight: 600px;
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+            }
+
+            footer .linha2 a:first-child{
+                border-right: 2px solid white;
+            }
+
+            footer .linha2 a:hover{
+                color: var(--cinza-hover);
+            }
+
+            /*MEDIAQUERY*/
+
+           @media only screen and (max-width: 600px){
+
+            /*menu*/
+
+            #principal{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            #menu{
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                margin: 0px;
+            }
+            
+            #menu a{
+                display: flex;
+                align-items: center;
+                height: 50px;
+            }
+
+            #principal button{
+                width: 100px;
+                margin: 0px;
+            }
+
+            /*section*/
+
+            section h1{
+                font-size: 38px;
+            }
+
+            section h2{
+                font-size: 28px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            form{
+                width: 95%;
+                font-size: 20px;
+            }
+
+            .checkbox-itens label{
+                font-size: 17px;
+            }
             }
